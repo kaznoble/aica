@@ -1,0 +1,55 @@
+<?php
+$html = '<div class="div_non_summary_table" >';
+$html .= '<table class="table table-sm table-striped">';
+$html .= '<thead>';
+$html .= '<tr>';
+$html .= '<th colspan="2" scope="col" >Fund Info</th>';
+$html .= '</tr>';
+$html .= '</thead>';
+$html .= '<tbody>';
+$html .= '<tr>';
+$html .= '<td>Website</td>';
+$html .= '<td><a href="' . $get_fund_info[0]['website'] . '">Website link</a></td>';
+$html .= '</tr>';
+$html .= '<tr>';
+$html .= '<td>Sponsor</td>';
+$html .= '<td>' . $get_fund_info[0]['sponsor'] . '</td>';
+$html .= '</tr>';
+$html .= '<tr>';
+$html .= '<td>Subadvisor</td>';
+$html .= '<td>' . $get_fund_info[0]['subadvisor'] . '</td>';
+$html .= '</tr>';
+$html .= '<tr>';
+$html .= '<td>Custodian</td>';
+$html .= '<td>' . $get_fund_info[0]['custodian'] . '</td>';
+$html .= '</tr>';
+$html .= '<tr>';
+$html .= '<td>Transfer Agent</td>';
+$html .= '<td>' . $get_fund_info[0]['transfer_agency'] . '</td>';
+$html .= '</tr>';
+$html .= '<tr>';
+$html .= '<td>Fiscal Year</td>';
+$monthName = 'No date';
+if(!empty($get_fund_info[0]['fiscal_year'])) {
+	$monthNum  = $get_fund_info[0]['fiscal_year'];
+	$dateObj   = DateTime::createFromFormat('!m', $monthNum);
+	$monthName = $dateObj->format('F');
+}
+$html .= '<td>' . $monthName . '</td>';
+$html .= '</tr>';
+$html .= '<tr>';
+$html .= '<td>Redemption Details</td>';
+$html .= '<td>' . $get_fund_info[0]['redemption_details'] . '</td>';
+$html .= '</tr>';
+$html .= '<tr>';
+$html .= '<td>Inception Date</td>';
+$html .= '<td>' . date('F d, Y', strtotime($get_fund_info[0]['earliest_inception'])) . '</td>';
+$html .= '</tr>';
+$html .= '<tr>';
+$html .= '<td>Objective</td>';
+$html .= '<td>' . $get_fund_info[0]['investment_objective'] . '</td>';
+$html .= '</tr>';
+$html .= '</tbody>';
+$html .= '</table>';
+$html .= '</div>';
+?>

@@ -1,0 +1,13 @@
+{
+    "name": "kaz/aicaangular",
+    "description": "Aica plugin",
+    "authors": [
+        {
+            "name": "Kaz Noble",
+            "email": "kaz@spikydesign.com"
+        }
+    ],
+    "require": {
+        "php-curl-class/php-curl-class": "^8.6"
+    }
+}

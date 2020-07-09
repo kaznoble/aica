@@ -1,0 +1,5 @@
+[17-Oct-2019 11:11:44 UTC] PHP Warning:  Illegal string offset 'tmp_name' in /home/mh2w26fh96ay/public_html/staging.aicalliance.org/wp-content/plugins/aica-for-wp/aica-wordpress-plugin.php on line 284
+[17-Oct-2019 11:14:22 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/mh2w26fh96ay/public_html/staging.aicalliance.org/wp-content/plugins/aica-for-wp/aica-wordpress-plugin.php on line 281
+[17-Oct-2019 11:14:34 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/mh2w26fh96ay/public_html/staging.aicalliance.org/wp-content/plugins/aica-for-wp/aica-wordpress-plugin.php on line 281
+[17-Oct-2019 11:15:04 UTC] PHP Warning:  Illegal string offset 'tmp_name' in /home/mh2w26fh96ay/public_html/staging.aicalliance.org/wp-content/plugins/aica-for-wp/aica-wordpress-plugin.php on line 285
+[17-Oct-2019 11:16:43 UTC] PHP Warning:  Illegal string offset 'tmp_name' in /home/mh2w26fh96ay/public_html/staging.aicalliance.org/wp-content/plugins/aica-for-wp/aica-wordpress-plugin.php on line 285

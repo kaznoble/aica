@@ -1,0 +1,13 @@
+{
+    "name": "kaz/aica-for-wp",
+    "authors": [
+        {
+            "name": "Kaz Noble",
+            "email": "kaz@spikydesign.com"
+        }
+    ],
+    "require": {
+        "twbs/bootstrap": "4.3.1",
+        "php-curl-class/php-curl-class": "^8.6"
+    }
+}
