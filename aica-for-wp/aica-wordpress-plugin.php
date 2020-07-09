@@ -447,7 +447,7 @@ function contactform7_before_send_mail( $form_to_DB ) {
 		
 		// Get address lat and long
 		// Google APIs
-		$mapStr = 'https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=' . $posted_data['work-street'] . '%20' . $posted_data['work-city'] . '%20' . $posted_data['work-state'] . '&inputtype=textquery&fields=formatted_address,name,geometry&key=AIzaSyD_OeCKUhWVbqujbqDmrfkAaIMdM66WvlY';
+		$mapStr = 'https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=' . $posted_data['work-street'] . '%20' . $posted_data['work-city'] . '%20' . $posted_data['work-state'] . '&inputtype=textquery&fields=formatted_address,name,geometry&key=###';
 		$mapStr = str_replace(' ','%20',$mapStr);
 		$mapres = callAPI('GET', $mapStr, false);
 		$mapres = json_decode($mapres,true);
